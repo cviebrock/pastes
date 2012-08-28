@@ -10,3 +10,9 @@
 @section('content')
 <pre class="prettyprint linenums"><code>{{ $paste }}</code></pre>
 @endsection
+
+@section('footer')
+<div class="footer">
+	Created {{ $created }} and viewed {{ $views }}
+</div>
+@endsection

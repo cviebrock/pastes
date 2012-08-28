@@ -24,6 +24,8 @@
 
 	@yield('content')
 
+	@yield('footer')
+
 	{{ HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js') }}
 	{{ HTML::script('js/prettify.js') }}
 	{{ HTML::script('js/tabby.js') }}

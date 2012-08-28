@@ -112,8 +112,12 @@ Route::get('(:any)', array('as' => 'paste', 'do' => function ($id)
 		return Response::error('404');
 	}
 
+	$paste->increment('views');
+
 	return View::make('view')->with('paste', htmlentities($paste->paste))
-						    ->with('id', $id);
+						    ->with('id', $id)
+						    ->with('views', $paste->views . ' '. Str::plural('time', $paste->views) )
+						    ->with('created',Time::ago($paste->created_at) );
 }));
 
 /*

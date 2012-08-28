@@ -116,6 +116,7 @@ textarea
 textarea
 {
 	padding:3em;
+	margin-left:2em;
 }
 
 /* code prettify styles */
@@ -182,4 +183,25 @@ textarea
 .pln
 {
   color: #ccc;
+}
+
+.footer
+{
+	z-index:999;
+	padding:0.5em 1em;
+	position:fixed;
+	bottom: 1em;
+	right: 1.4em;
+	overflow: hidden;
+	font-size: 0.6em;
+	border-radius:3px;
+	color: #666;
+	background-color:transparent;
+	background-color:rgba(68,68,68,0.5);
+}
+
+.footer:hover
+{
+	color: #999;
+	background-color:#444;
 }
